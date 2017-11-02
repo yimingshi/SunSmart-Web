@@ -1,0 +1,32 @@
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+}
+
+#pic1 img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+
+.navbar-inverse {
+  background-color: rgb(233, 172, 36);
+}
+
+.modal .modal-header {
+  background: rgb(233, 172, 36);
+  color: floralwhite;
+}
+
+.modal .modal-header button {
+  color: floralwhite;
+}
+
+.modal .modal-body {
+  background: rgb(208, 226, 3);
+}
+
+.modal .modal-footer {
+  background: rgb(227, 191, 40);
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+  <!-- build:css css/main.css -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link href="css/styles.css" rel="stylesheet">
+  <!-- endbuild -->
+
+  <title>SunSmart</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-inverse navbar-toggleable-sm fixed-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="img/sunsmart_logo.png" height="30" width="41"></a>
+      <div class="collapse navbar-collapse" id="Navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+        </ul>
+          <a class="navbar-brand" id="loginb" href="#">
+          <span class="fa fa-sign-in fa-lg"></span><span style="font-size:12pt">Log In</span></a>
+
+          <a class="navbar-brand" id="signupb" href="#">
+          <span class="fa fa-user-plus fa-lg"></span><span style="font-size:12pt"> Sign Up</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login bar -->
+  <div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Login </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form class="form-inline">
+            <div class="form-group">
+              <label class="sr-only" for="inputemail">Email address</label>
+              <input type="email" class="form-control form-control-sm mr-1" id="inputemail" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="inputpassword">Password</label>
+              <input type="password" class="form-control form-control-sm mr-1" id="inputpassword" placeholder="Password">
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+              <input class="form-check-input" type="checkbox"> Remember me</input>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+          <button id= "signinb" type="submit" class="btn btn-primary btn-sm">Sign in</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign up bar -->
+  <div id="signupModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Sign Up </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form class="form-inline">
+            <div class="form-group">
+              <label class="sr-only" for="inputemail">Email address</label>
+              <input type="email" class="form-control form-control-sm mr-1" id="inputemail" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="inputpassword">Password</label>
+              <input type="password" class="form-control form-control-sm mr-1" id="inputpassword" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="inputpassword2">Confirm Password</label>
+              <input type="password" class="form-control form-control-sm mr-1" id="inputpassword2" placeholder="Confirm Password">
+            </div>
+            <div class="checkbox">
+                <label class="small">
+                    <input name="terms" type="checkbox">I have read and agree to the <a href="#"> terms of service</a>
+                </label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+          <button id= "signupb" type="submit" class="btn btn-primary btn-sm">Sign me up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="pic1">
+    <img src="img/sunsmart_mainpage.png" alt="Mainpage Img">
+  </div>
+
+
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <!-- build:js js/main.js -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/tether/dist/js/tether.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <!-- endbuild -->
+
+</body>
+
+</html>
